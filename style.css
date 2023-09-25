@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@900&family=Special+Elite&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    backdrop-filter: blur(10px);
+    font-weight: bolder;
+    box-shadow: 1px 1px 100px ;
+}
+.brand{
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+
+}
+.menu{
+    text-shadow: 1px 1px 25px rgb(175, 175, 175);
+}
+
+
+
+/* banner section */
+
+.banner{
+    background-size: contain;
+    width: 100%;
+    height: 600px;
+
+}
+
+
+.bfont{
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+
+}
+
+
+.btext{
+    position: absolute;
+    top: 15%;
+}
+
+.btext h1{
+    font-size: 80px;
+    color: white;
+}
+
+.intro{
+
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.5s;
+}
+.phead{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.gpara{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    color: white;
+}
+
+.gall:hover{
+    cursor: pointer;
+    
+}
+
+.gall:hover .intro{
+    height: 120px;
+    bottom: 130px;
+
+}
+.gall:hover .gpara{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.sintro{
+
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 4px;
+    transition: 0.5s;
+}
+
+.shead{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.spara{
+    font-size: 15px;
+    margin: 10px;
+    visibility: hidden;
+    color: white;
+}
+.sall:hover .spara{
+    opacity: 1;
+    visibility: visible;
+}
+.sall:hover{
+    cursor: pointer;
+    
+}
+.sall:hover .sintro{
+    height: 205px;
+    bottom: 1px;
+
+}
+.sall:hover .spara{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 100px rgb(197, 229, 255);
+
+}
+
+.footerimg{
+    height: 300px;
+    width: 100%;
+}
+
+.goback{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: rgb(30, 148, 0);
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+
+
+
+

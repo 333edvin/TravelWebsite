@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light m-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand ml-2 text-white brand" href="#">Travel</a>
+            <button
+            class="navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse ml-3" id="navbarNav">
+                <ul class="navbar-nav ml-auto menu">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+<!-- banner section -->
+    <div class="bfont">
+        <img src="./images/banner.jpg" class="banner " alt="banner">
+        <div class="col-lg-12 btext">
+        <div class="text-center ">
+
+                <h1>Lets travel</h1>
+                <p class="text-light my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sunt consequuntur eveniet eligendi sapiente delectus </p>
+                <button class="btn bg-success text-light my-5 ">Book Your Travel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about -->
+
+    <section id="about" class="py-5" itemid="about">
+        <div class="container bg-light rounded">
+          <div class="row p-5">
+            <div class="col-md-6">
+              <h2 class="text-uppercase">
+                About Us
+              </h2>
+              <p>
+                A travel agency is your window to extraordinary adventures. Our team specializes in curating personalized journeys, be it thrilling escapades or enriching cultural experiences. From booking flights and accommodations to arranging guided tours, we take care of every detail, making your trip effortless and memorable. Choose us to embark on your next adventure, and let the world become your playground.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <!-- Insert an image of your store or products here -->
+              <img
+                src="./images/travel-hd.jpg"
+                alt="Our Furniture Store"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- top travelling destination section 2-->
+            <div class="container p-5 bg-light rounded section2">
+                <h2 class="">Top Travelling Destination</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nobis soluta officia in eveniet et quod, sequi placeat quasi saepe possimus, facilis sed, nostrum beatae vitae corrupti a nesciunt quis.</p>
+                <div class="row py-4 ">
+                    <div class="col-md-4">
+                        <div class="card rounded m-2 p-2">
+                            <img src="./images/paris.jpg" class="rounded img-fluid" alt="">
+                            <h3 class="my-3">Paris</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis architecto explicabo </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card rounded m-2 p-2">
+                            <img src="./images/rome.jpg" class="rounded img-fluid" alt="">
+                            <h3 class="my-3">Rome</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis architecto explicabo </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card rounded m-2 p-2">
+                            <img src="./images/switserland.jpg" class="rounded img-fluid" alt="">
+                            <h3 class="my-3">Switzerland</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis architecto explicabo </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+    
+            </div>
+    
+
+
+    <!-- places section -->
+        <div class="container-fluid mt-5">
+            <div class="row bg-light">
+                <!-- Left Side (One Big Image) -->
+                <div class="col-lg-6 mb-4 gall">
+                    <div class="card">
+
+                        <img src="./images/dubai.jpg" class="img-fluid" alt="Big Image">
+                        <div class="intro">
+                            <h1 class="phead">Dubai</h1>
+                            <p class="gpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Side (Four Small Images) -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4 sall">
+                            <div class="card">
+
+                                <img src="./images/sydney.jpg" class="img-fluid" alt="Small Image 1">
+                                <div class="sintro">
+                                    <h1 class="shead">Sydney</h1>
+                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4 sall">
+                            <div class="card">
+
+                                <img src="./images/london.jpg" class="img-fluid" alt="Small Image 2">
+                                <div class="sintro">
+                                    <h1 class="shead">London</h1>
+                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4 sall">
+                            <div class="card">
+                                
+                                <img src="./images/singapore.jpg" class="img-fluid" alt="Small Image 3">
+                                <div class="sintro">
+                                    <h1 class="shead">Singapore</h1>
+                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4 sall">
+                            <div class="card">
+
+                                <img src="./images/tajmahal.jpg" class="img-fluid" alt="Small Image 4">
+                                <div class="sintro">
+                                    <h1 class="shead">Taj mahal</h1>
+                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<!-- expert holiday plan -->
+<section id="services">
+
+    <div class="text-center p-2 m-5">
+
+
+        <h1>Get the Best Holiday Planned By Experts!</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Quisquam nam, esse quibusdam doloribus voluptatibus, voluptate nobis quaerat error vel non dolorem explicabo ab illo praesentium blanditiis</p>
+    </div>
+    <form >
+        <div class="m-5">
+            <div class="container px-5">
+                <div class="row my-5">
+    
+                    <div class="col-lg-4">
+                        <p class="text-secondary fs-6">Name</p>
+                        <input type="text" class="form-control bg-light">
+                        </div>
+        
+                        <div class="col-lg-4">
+        
+                            <p class="text-secondary fs-6">Destination</p>
+                            <select name="" id="" class="form-control bg-light">
+                                <option value="" hidden>Any</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+            
+                        <div class="col-lg-4">
+        
+                            <p class="text-secondary fs-6">Activity</p>
+                            <select name="" id="" class="form-control bg-light">
+                        <option value="" hidden>Any</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="container px-5 ">
+    
+                <div class="row ">
+    
+                    <div class="col-lg-4">
+                        <p class="text-secondary fs-6">Duration</p>
+                        <select name="" id="" class="form-control bg-light">
+                            <option value="" hidden>Any</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        </div>
+        
+                        <div class="col-lg-4">
+        
+                            <p class="text-secondary fs-6">Date</p>
+                            <input type="date" name="" id="" class="form-control">
+                        </div>
+            
+                        <div class="col-lg-4">
+                            <p class="text-secondary">Click to Submit</p>
+                            <button class="bg-primary btn w-100 text-white">Submit</button>
+                    </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+    
+
+
+        <!-- explore -->
+        
+        <section>
+
+            <div class="container">
+                <div class="row my-5 bg-light rounded">
+                    <div class="col-lg-6 px-5 ">
+                        <img src="./images/WhatsApp Image 2023-09-23 at 13.26.31.jpg" class="img-fluid p-3 rounded" alt="">
+                    </div>
+                    <div class="col-lg-6 p-5">
+                        
+                        <h5 class="">Explore</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nihil illo autem, obcaecati facilis sint officiis modi sequi harum doloribus ipsam! </p>
+                        <div class=" mt-5 pt-1">
+                            <button class="btn bg-primary text-white ">Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+      
+
+
+
+                <div class="image-container">
+                    <img src="./images/footerimg.jpg" alt="Image" class="img-fluid footerimg">
+                    <div class="overlay-text text-center">
+                        <h2>We are With you At Every
+                            <br>Stage of Your Journey.
+                        </h2>
+                        <p>Some additional text goes here.</p>
+                    </div>
+            </div>
+
+
+
+
+
+
+        <!-- Footer -->
+
+        <section id="contact">
+
+            <footer class="text-center text-lg-start bg-light text-muted">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                  <!-- Left -->
+                  <div class="me-5 d-none d-lg-block">
+                    <span>Contact Us On:</span>
+                  </div>
+                  <!-- Left -->
+              
+                  <!-- Right -->
+                  <div>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+              
+                <!-- Section: Links  -->
+                <section class="">
+                  <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                      <!-- Grid column -->
+                      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          <i class="fas fa-gem me-3"></i>Travel
+                        </h6>
+                        <p>
+                            Our travel agency is a company that helps people plan and book their trips, from flights and accommodations to activities and tours, providing expert guidance and convenience for travelers.
+                        </p>
+                      </div>
+                      <!-- Grid column -->
+              
+                      <!-- Grid column -->
+                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          Categories
+                        </h6>
+                        <p>Event Travel</p>
+                        <p>Holiday Trip</p>
+                        <p>Group Tour</p>
+                        <p>Package Holiday</p>
+                      </div>
+              
+                      
+              
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                          <i class="fas fa-envelope me-3"></i>
+                          info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                      </div>
+                      <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                  </div>
+                </section>
+                <!-- Section: Links  -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                  © 2021 Copyright:
+                  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+              <!-- Footer -->
+        </section>
+
+  <a href="#" class="text-white">
+        <div class="goback text-center p-1 ">
+        <i class="fa-sharp fa-solid fa-caret-up fa-bounce"></i>
+    </a>
+
+  </div>
+        
+        
+        <!-- Include Bootstrap JS -->
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    </body>
+
+    </html>
+    
+    
+</body> 
+</html>
