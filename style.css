@@ -5,57 +5,101 @@
     padding: 0;
     
 }
-nav{
+body{
+    background-color:rgb(233, 233, 233);
+}
+
+.navbar {
     backdrop-filter: blur(10px);
-    font-weight: bolder;
-    box-shadow: 1px 1px 100px ;
+   
+    
+
 }
-.brand{
+.navbar-brand {
     text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
 
 }
-.menu{
-    text-shadow: 1px 1px 25px rgb(175, 175, 175);
+.navbar-nav {
+    margin-left: auto; /* Pushes the links to the right */
 }
+.navbar-nav a {
+    color: #ffffff; /* Text color for navigation links */
+    margin-right: 15px; /* Adjust the spacing between links */
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-weight: bold;
 
 
+
+}
 
 /* banner section */
 
-.banner{
-    background-size: contain;
+#banner {
+    position: relative;
     width: 100%;
-    height: 600px;
-
+    height: 655px;
+    overflow: hidden;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+    
 }
 
 
 .bfont{
-    font-family: 'Playfair Display', serif;
-    font-size: larger;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
 
+}
+
+.bfont a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
 .btext{
     position: absolute;
-    top: 15%;
+    top: 25%;
 }
 
 .btext h1{
     font-size: 80px;
     color: white;
 }
-
+.hid{
+    visibility: visible;
+    color: white;
+}
+.btext button{
+    background-color: green;
+    margin: 20px;
+}
+.section2 h2 p{
+    padding: 20px;
+}
 .intro{
 
-    width: 95%;
-    height: 100px;
+    width: 100%;
+    height: 70px;
     padding: 10px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.459);
+
 }
 .phead{
     color: white;
@@ -66,7 +110,12 @@ nav{
     margin: 20px;
     visibility: hidden;
     color: white;
+    text-align: center;
+    margin-top: 15%;
+
 }
+
+
 
 .gall:hover{
     cursor: pointer;
@@ -74,25 +123,31 @@ nav{
 }
 
 .gall:hover .intro{
-    height: 120px;
-    bottom: 130px;
+    height: 100%;
+    bottom: 0px;
 
 }
 .gall:hover .gpara{
     opacity: 1;
     visibility: visible;
 }
+.sall{
+    height: 230px;
+    padding: 4px;
+}
+
 
 
 .sintro{
 
-    width: 90%;
+    width: 100%;
     height: 50px;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 4px;
+    bottom: 0px;
     transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.459);
 }
 
 .shead{
@@ -109,7 +164,10 @@ nav{
     margin: 10px;
     visibility: hidden;
     color: white;
+    text-align: center;
+    margin-top: 10%;
 }
+
 .sall:hover .spara{
     opacity: 1;
     visibility: visible;
@@ -119,8 +177,8 @@ nav{
     
 }
 .sall:hover .sintro{
-    height: 205px;
-    bottom: 1px;
+    height: 100%;
+    bottom: 0px;
 
 }
 .sall:hover .spara{
@@ -143,8 +201,16 @@ nav{
 }
 
 .card:hover{
-    box-shadow: 5px 5px 100px rgb(197, 229, 255);
+    box-shadow: 1px 1px 20px rgb(133, 133, 133);
 
+}
+
+.cardBtn{
+    background-color: rgb(43, 161, 122);
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    color: white;
 }
 
 .footerimg{
@@ -161,6 +227,207 @@ nav{
     height: 50px;
     font-size: 30px;
     border-radius: 50%;
+    z-index: 2;
+}
+.fcontainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.fcontainer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+    
+}
+.fcontainer .serviceBox{
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.fcontainer .serviceBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.fcontainer .serviceBox:hover img{
+    top: 30px;
+    left: calc(50% - 40%);
+    width: 80px;
+    height: 80px;
+    border: 50%;
+    border-radius: 50%;
+}
+
+.fcontainer .serviceBox .content{
+    position: relative;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+}
+.fcontainer .serviceBox:hover .content{
+    transform: scale(1);
+    transition: 0.5s;
+
+}
+
+.fcontainer .serviceBox .content h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fcontainer .serviceBox .content p{
+    font-weight: 300;
+    line-height: 1.5em;
+
+}
+
+.fcontainer .serviceBox .content button{
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+    .btext h1{
+        font-size: 35px;
+    }
+    .btext p{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .hid{
+        visibility:hidden;
+    }
+    .btext button{
+        background-color: green;
+    margin: 0px;
+    position: absolute;
+    top: 55%;
+    left: 36%;
+
+    }
+    #banner {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .fcontainer{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+     
+    .fcontainer .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+        
+    }
+    .fcontainer .serviceBox{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        background-color: rgb(12, 12, 12);
+        border-radius: 10px;
+        overflow: hidden;
+        
+    }
+
+    .sall{
+        margin-top: 20px;
+    }
+ 
+
+
+
+    .goback{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgb(30, 148, 0);
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .fcontainer .serviceBox:hover img{
+        top: 30px;
+        left: calc(50% - 40%);
+        width: 60px;
+        height: 60px;
+        border: 50%;
+        border-radius: 50%;
+    }
+
+    .fcontainer .serviceBox .content h3{
+        margin-top: 0px;
+        font-size: 18px;
+        /* margin-bottom: 5px; */
+    }
+    .fcontainer .serviceBox .content p{
+        font-weight: 300;
+        line-height: 1em;
+    
+    }
+
+    .fcontainer .serviceBox .content button{
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    
+
+  
+
+  
+     
+    
+   
+    
 }
 
 

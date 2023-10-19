@@ -16,39 +16,34 @@
     <link rel="stylesheet" href="style.css">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
 
 </head>
 <body >
-    <nav class="navbar navbar-expand-lg navbar-light m-3 fixed-top">
-        <div class="container">
-            <a class="navbar-brand ml-2 text-white brand" href="#">Travel</a>
-            <button
-            class="navbar-toggler "
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse ml-3" id="navbarNav">
-                <ul class="navbar-nav ml-auto menu">
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+   
+
+    <nav class="navbar navbar-expand-lg m-2  px-5 fixed-top">
+        <a class="navbar-brand" href="#">Explore & Beyond</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
     
@@ -56,14 +51,21 @@
 
 
 <!-- banner section -->
-    <div class="bfont">
-        <img src="./images/banner.jpg" class="banner " alt="banner">
+    <div class="bfont" id="banner">
+        <!-- <img src="./images/banner.jpg" class="banner " alt="banner">
+         -->
+         <video class="banner" autoplay muted loop>
+            <source src="./images/banner1.mp4" type="video/mp4" class="bannervid">
+         </video>
         <div class="col-lg-12 btext">
-        <div class="text-center ">
+          <div class="text-center ">
 
-                <h1>Lets travel</h1>
-                <p class="text-light my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sunt consequuntur eveniet eligendi sapiente delectus </p>
-                <button class="btn bg-success text-light my-5 ">Book Your Travel</button>
+                <h1>Let's travel</h1>
+                <p class="text-light my-4">Embark on a journey of discovery and adventure as we explore breathtaking destinations 
+                    <p class="hid">
+                    share captivating stories, and uncover the world's hidden gems</p>
+                  </p>
+                <button class="btn"> <a href="#explore"> EXPLORE</a></button>
             </div>
         </div>
     </div>
@@ -72,13 +74,13 @@
     <!-- about -->
 
     <section id="about" class="py-5" itemid="about">
-        <div class="container bg-light rounded">
+        <div class="container-fluid bg-white rounded">
           <div class="row p-5">
-            <div class="col-md-6">
+            <div class="col-md-6" style="font-family: 'Cabin Condensed', sans-serif;">
               <h2 class="text-uppercase">
                 About Us
               </h2>
-              <p>
+              <p class="text-justify">
                 A travel agency is your window to extraordinary adventures. Our team specializes in curating personalized journeys, be it thrilling escapades or enriching cultural experiences. From booking flights and accommodations to arranging guided tours, we take care of every detail, making your trip effortless and memorable. Choose us to embark on your next adventure, and let the world become your playground.
               </p>
             </div>
@@ -94,180 +96,203 @@
         </div>
       </section>
 
-            <!-- top travelling destination section 2-->
-            <div class="container p-5 bg-light rounded section2">
-                <h2 class="">Top Travelling Destination</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nobis soluta officia in eveniet et quod, sequi placeat quasi saepe possimus, facilis sed, nostrum beatae vitae corrupti a nesciunt quis.</p>
-                <div class="row py-4 ">
-                    <div class="col-md-4">
-                        <div class="card rounded m-2 p-2">
-                            <img src="./images/paris.jpg" class="rounded img-fluid" alt="">
-                            <h3 class="my-3">Paris</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis architecto explicabo </p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card rounded m-2 p-2">
-                            <img src="./images/rome.jpg" class="rounded img-fluid" alt="">
-                            <h3 class="my-3">Rome</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis architecto explicabo </p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card rounded m-2 p-2">
-                            <img src="./images/switserland.jpg" class="rounded img-fluid" alt="">
-                            <h3 class="my-3">Switzerland</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis architecto explicabo </p>
-                            
-                        </div>
-                    </div>
+    <!-- places section -->
+        <div class="container-fluid " style="font-family: 'Cabin Condensed', sans-serif;">
+            <div class="row bg-white">
+                <div class="text-center">
+                    <h1 class="my-3" style="font-family: 'Cabin Condensed', sans-serif;">Latest Travell</h1>
                 </div>
                 
-    
-            </div>
-    
-
-
-    <!-- places section -->
-        <div class="container-fluid mt-5">
-            <div class="row bg-light">
                 <!-- Left Side (One Big Image) -->
-                <div class="col-lg-6 mb-4 gall">
+                <div class="col-lg-6 p-1 gall">
                     <div class="card">
 
                         <img src="./images/dubai.jpg" class="img-fluid" alt="Big Image">
                         <div class="intro">
                             <h1 class="phead">Dubai</h1>
-                            <p class="gpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                            <p class="gpara">Dubai, in the UAE, epitomizes modern luxury, with towering skyscrapers, extravagant shopping, and a blend of tradition and innovation.</p>
                         </div>
                     </div>
                 </div>
     
                 <!-- Right Side (Four Small Images) -->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6 mb-4 sall">
-                            <div class="card">
+                <div class="col-lg-6  ">
+                    <div class="container-fluid scontainer">
 
-                                <img src="./images/sydney.jpg" class="img-fluid" alt="Small Image 1">
-                                <div class="sintro">
-                                    <h1 class="shead">Sydney</h1>
-                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                        <div class="row ">
+                            <div class="col-lg-6 sall">
+                                <div class="card">
+    
+                                    <img src="./images/sydney.jpg" class="img-fluid" alt="Small Image 1">
+                                    <div class="sintro">
+                                        <h1 class="shead ">Sydney</h1>
+                                        <p class="spara ">Sydney, Australia: A coastal metropolis known for its iconic landmarks, rich cultural diversity, and breathtaking beaches.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 mb-4 sall">
-                            <div class="card">
-
-                                <img src="./images/london.jpg" class="img-fluid" alt="Small Image 2">
-                                <div class="sintro">
-                                    <h1 class="shead">London</h1>
-                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                            <div class="col-lg-6  sall">
+                                <div class="card">
+    
+                                    <img src="./images/london.jpg" class="img-fluid" alt="Small Image 2">
+                                    <div class="sintro">
+                                        <h1 class="shead">London</h1>
+                                        <p class="spara">London, UK: A global metropolis with world-renowned landmarks, a vibrant cultural mosaic, and cosmopolitan allure. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 mb-4 sall">
-                            <div class="card">
-                                
-                                <img src="./images/singapore.jpg" class="img-fluid" alt="Small Image 3">
-                                <div class="sintro">
-                                    <h1 class="shead">Singapore</h1>
-                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                            <div class="col-lg-6  sall ">
+                                <div class="card">
+                                    
+                                    <img src="./images/singapore.jpg" class="img-fluid" alt="Small Image 3">
+                                    <div class="sintro ">
+                                        <h1 class="shead">Singapore</h1>
+                                        <p class="spara">Singapore: A dynamic city-state known for its modern skyline, efficient  infrastructure,  and a harmonious blend of cultures. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 mb-4 sall">
-                            <div class="card">
-
-                                <img src="./images/tajmahal.jpg" class="img-fluid" alt="Small Image 4">
-                                <div class="sintro">
-                                    <h1 class="shead">Taj mahal</h1>
-                                    <p class="spara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magni sit error fuga officia odio ea </p>
+                            <div class="col-lg-6  sall">
+                                <div class="card">
+    
+                                    <img src="./images/tajmahal.jpg" class="img-fluid" alt="Small Image 4">
+                                    <div class="sintro">
+                                        <h1 class="shead">Taj mahal</h1>
+                                        <p class="spara">Taj Mahal: India's architectural masterpiece, a symbol of eternal love, and a UNESCO World Heritage site. </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+                    </div>
+
+         <!-- top travelling destination section 2-->
+         <section id="explore">
+
+            <div class="container-fluid p-5 bg-white rounded explore" style="font-family: 'Cabin Condensed', sans-serif;">
+                <h2 class="px-3">Top Travelling Destination</h2>
+                <p class="px-3 text-justify">Explore the world's top travel destinations and embark on a journey of a lifetime. From the timeless beauty of Paris to the enchanting landscapes of Bali, the bustling streets of Tokyo to the serene beaches of the Maldives, these destinations offer a tapestry of experiences.</p>
+                <div class="row p-4 ">
+                    <div class="col-md-4 my-2">
+                        <div class="card rounded ">
+                            <img src="./images/paris.jpg" class="rounded img-fluid" alt="">
+                            <h3 class="my-3 px-3">Paris</h3>
+                            <p class="px-3">Paris, the capital of France, is a timeless city celebrated for its romantic ambiance and iconic landmarks.</p>
+                            <div class="align-self-end ">
+
+                                <button class="cardBtn m-2">Take a look</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="card rounded ">
+                            <img src="./images/rome.jpg" class="rounded img-fluid" alt="">
+                            <h3 class="my-3 px-3">Rome</h3>
+                            <p class="px-3">Rome, the capital of Italy, is a city steeped in history and culture. Known as the "Eternal City," </p>
+                            <div class="align-self-end">
+                            <button class="cardBtn m-2">Take a look</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="card rounded  ">
+                            <img src="./images/switserland.jpg" class="rounded img-fluid" alt="">
+                            <h3 class="my-3 px-3">Switzerland</h3>
+                            <p class="px-3">Switzerland: Alpine splendor, precision engineering, thrilling adventures, and the world's finest chocolate.</p>
+                            <div class="align-self-end">
+                            <button class="cardBtn m-2">Take a look</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+
+                    <button class="border p-2 rounded btn-info">Show more</button>
+                </div>
+            </div>
+        </section>
 
         
 <!-- expert holiday plan -->
 <section id="services">
 
-    <div class="text-center p-2 m-5">
+    
+    <div class="container-fluid bg-white pb-5 ">
+    <div class="text-center p-5  text-secondary" style="font-family: 'Archivo Black', sans-serif;">
 
 
         <h1>Get the Best Holiday Planned By Experts!</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Quisquam nam, esse quibusdam doloribus voluptatibus, voluptate nobis quaerat error vel non dolorem explicabo ab illo praesentium blanditiis</p>
+        <p>Ready for the ultimate travel adventure? Complete the form and watch our expert team turn your holiday dreams into reality. Your next unforgettable journey is just a click away!</p>
     </div>
-    <form >
-        <div class="m-5">
-            <div class="container px-5">
-                <div class="row my-5">
-    
-                    <div class="col-lg-4">
-                        <p class="text-secondary fs-6">Name</p>
-                        <input type="text" class="form-control bg-light">
-                        </div>
+
+        <form >
+            <div class="">
+                <div class="container px-5">
+                    <div class="row py-2">
         
                         <div class="col-lg-4">
-        
-                            <p class="text-secondary fs-6">Destination</p>
-                            <select name="" id="" class="form-control bg-light">
-                                <option value="" hidden>Any</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                        </div>
+                            <p class="text-secondary fs-6">Name</p>
+                            <input type="text" class="form-control bg-light" placeholder="Name">
+                            </div>
             
-                        <div class="col-lg-4">
-        
-                            <p class="text-secondary fs-6">Activity</p>
-                            <select name="" id="" class="form-control bg-light">
-                        <option value="" hidden>Any</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                    </div>
-                    </div>
-                </div>
-                <div class="container px-5 ">
-    
-                <div class="row ">
-    
-                    <div class="col-lg-4">
-                        <p class="text-secondary fs-6">Duration</p>
-                        <select name="" id="" class="form-control bg-light">
+                            <div class="col-lg-4">
+            
+                                <p class="text-secondary fs-6">Destination</p>
+                                <select name="" id="" class="form-control bg-light">
+                                    <option value="" hidden>Any</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                
+                            <div class="col-lg-4">
+            
+                                <p class="text-secondary fs-6">Activity</p>
+                                <select name="" id="" class="form-control bg-light">
                             <option value="" hidden>Any</option>
                             <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
                         </select>
                         </div>
-        
-                        <div class="col-lg-4">
-        
-                            <p class="text-secondary fs-6">Date</p>
-                            <input type="date" name="" id="" class="form-control">
                         </div>
-            
+                    </div>
+                    <div class="container px-5 ">
+        
+                    <div class="row py-2">
+        
                         <div class="col-lg-4">
-                            <p class="text-secondary">Click to Submit</p>
-                            <button class="bg-primary btn w-100 text-white">Submit</button>
+                            <p class="text-secondary fs-6">Duration</p>
+                            <select name="" id="" class="form-control bg-light">
+                                <option value="" hidden>Any</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            </div>
+            
+                            <div class="col-lg-4">
+            
+                                <p class="text-secondary fs-6">Date</p>
+                                <input type="date" name="" id="" class="form-control">
+                            </div>
+                
+                            <div class="col-lg-4">
+                                <p class="text-secondary">Click to Submit</p>
+                                <button class="bg-primary btn w-100 text-white">Submit</button>
+                        </div>
+                        </div>
                     </div>
-                    </div>
+        
+        
                 </div>
-    
-    
+                </div>
             </div>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </section>
 
     
@@ -275,40 +300,58 @@
 
         <!-- explore -->
         
-        <section>
+        <section id="explore">
 
-            <div class="container">
-                <div class="row my-5 bg-light rounded">
-                    <div class="col-lg-6 px-5 ">
-                        <img src="./images/WhatsApp Image 2023-09-23 at 13.26.31.jpg" class="img-fluid p-3 rounded" alt="">
+
+            <div class=" fcontainer">
+                <div class="row m-5">
+                    <div class="text-center">
+                        <h1>INSPIRING PEOPLES</h1>
                     </div>
-                    <div class="col-lg-6 p-5">
-                        
-                        <h5 class="">Explore</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nihil illo autem, obcaecati facilis sint officiis modi sequi harum doloribus ipsam! </p>
-                        <div class=" mt-5 pt-1">
-                            <button class="btn bg-primary text-white ">Know More</button>
+
+                    <div class="col-lg-4 serviceBox">
+                        <img src="./images/PAULO-COELHO.jpg" alt="Paulo Coelho"/>
+                        <div class="content">
+                            <h3>Paulo Coelho</h3>
+                            <p>Paulo Coelho views travel as a means of self-discovery.</p>
+                            <button >View</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 serviceBox">
+                        <img src="./images/anthony-bourdain.jpg" alt="Anthony Bourdain"/>
+                        <div class="content">
+                            <h3>Anthony Bourdain</h3>
+                            <p>"Travel for food, people, and culture."</p>
+                            <button >View</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 serviceBox">
+                        <img src="./images/Dervla Murphy.jpg" alt="Dervla Murphy"/>
+                        <div class="content">
+                            <h3>Dervla Murphy</h3>
+                            <p>"Travel authentically, connecting with people and places."</p>
+                            <button >View</button>
                         </div>
                     </div>
                 </div>
             </div>
+       
 
 
-        </section>
-
+        </section> 
+       
       
 
 
 
-                <div class="image-container">
+                <!-- <div class="image-container">
                     <img src="./images/footerimg.jpg" alt="Image" class="img-fluid footerimg">
                     <div class="overlay-text text-center">
-                        <h2>We are With you At Every
-                            <br>Stage of Your Journey.
+                        <h2>"Embrace the journey, and let the world be your story."
                         </h2>
-                        <p>Some additional text goes here.</p>
+                        <p> Happy travels!</p>
                     </div>
-            </div>
+            </div> -->
 
 
 
@@ -388,7 +431,7 @@
                       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-home me-3"></i> kerala,India</p>
                         <p>
                           <i class="fas fa-envelope me-3"></i>
                           info@example.com
@@ -406,7 +449,7 @@
                 <!-- Copyright -->
                 <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
                   © 2021 Copyright:
-                  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">example.com</a>
                 </div>
                 <!-- Copyright -->
               </footer>
@@ -424,6 +467,9 @@
         <!-- Include Bootstrap JS -->
       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     </body>
 
