@@ -308,10 +308,17 @@ video {
 }
 
 
+/* Optional: Customize the appearance of the accordion */
+.card-header {
+    background-color: #f8f9fa; /* Background color for the accordion headers */
+    font-weight: bold;
+    font-family: 'Cabin Condensed', sans-serif;
+}
 
-
-
-
+.world-map{
+    width: 400px;
+    height: 250px;
+}
 
 
 

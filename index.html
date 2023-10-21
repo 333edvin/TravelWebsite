@@ -76,7 +76,7 @@
 
     <!-- about -->
 
-    <section id="about" class="py-5" itemid="about">
+    <section id="about"  itemid="about">
         <div class="container-fluid bg-white rounded">
           <div class="row p-5">
             <div class="col-md-6" style="font-family: 'Cabin Condensed', sans-serif;">
@@ -100,10 +100,10 @@
       </section>
 
     <!-- places section -->
-        <div class="container-fluid " style="font-family: 'Cabin Condensed', sans-serif;">
+        <div class="container-fluid my-5" style="font-family: 'Cabin Condensed', sans-serif;">
             <div class="row bg-white">
                 <div class="text-center">
-                    <h1 class="my-3" style="font-family: 'Cabin Condensed', sans-serif;">Latest Travell</h1>
+                    <!-- <h1 class="my-3" style="font-family: 'Cabin Condensed', sans-serif;">Latest Travell Destinations</h1> -->
                 </div>
                 
                 <!-- Left Side (One Big Image) -->
@@ -216,7 +216,53 @@
             </div>
         </section>
 
+
+
+    
+
+
+        <!-- explore -->
         
+        <section id="explore">
+
+
+            <div class=" fcontainer">
+                <div class="row m-5">
+                    <div class="text-center">
+                        <h1>INSPIRING STORIES</h1>
+                    </div>
+
+                    <div class="col-lg-4 serviceBox">
+                        <img src="./images/PAULO-COELHO.jpg" alt="Paulo Coelho"/>
+                        <div class="content">
+                            <h3>Paulo Coelho</h3>
+                            <p>Paulo Coelho views travel as a means of self-discovery.</p>
+                            <button >View</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 serviceBox">
+                        <img src="./images/anthony-bourdain.jpg" alt="Anthony Bourdain"/>
+                        <div class="content">
+                            <h3>Anthony Bourdain</h3>
+                            <p>"Travel for food, people, and culture."</p>
+                            <button >View</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 serviceBox">
+                        <img src="./images/Dervla Murphy.jpg" alt="Dervla Murphy"/>
+                        <div class="content">
+                            <h3>Dervla Murphy</h3>
+                            <p>"Travel authentically, connecting with people and places."</p>
+                            <button >View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
+
+        </section> 
+               
 <!-- expert holiday plan -->
 <section id="services">
 
@@ -297,51 +343,117 @@
     </div>
 </section>
 
-    
+<div class="container-fluid py-2 my-1 bg-white">
+    <div class="text-center">
 
+        <h1 class="mt-5" style="font-family: 'Cabin Condensed', sans-serif;">Travel Tips</h1>
+    </div>
+    <div id="accordion" class="my-4">
+        <!-- Tip 1 -->
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn px-5" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="tip-number">1.</span> Packing Essentials
+                    </button>
+                    </h5>
+                </div>
 
-        <!-- explore -->
-        
-        <section id="explore">
-
-
-            <div class=" fcontainer">
-                <div class="row m-5">
-                    <div class="text-center">
-                        <h1>INSPIRING PEOPLES</h1>
-                    </div>
-
-                    <div class="col-lg-4 serviceBox">
-                        <img src="./images/PAULO-COELHO.jpg" alt="Paulo Coelho"/>
-                        <div class="content">
-                            <h3>Paulo Coelho</h3>
-                            <p>Paulo Coelho views travel as a means of self-discovery.</p>
-                            <button >View</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 serviceBox">
-                        <img src="./images/anthony-bourdain.jpg" alt="Anthony Bourdain"/>
-                        <div class="content">
-                            <h3>Anthony Bourdain</h3>
-                            <p>"Travel for food, people, and culture."</p>
-                            <button >View</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 serviceBox">
-                        <img src="./images/Dervla Murphy.jpg" alt="Dervla Murphy"/>
-                        <div class="content">
-                            <h3>Dervla Murphy</h3>
-                            <p>"Travel authentically, connecting with people and places."</p>
-                            <button >View</button>
-                        </div>
-                    </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body px-5 mx-4">
+                    Don't forget to pack essentials like a passport, travel adapter, and travel insurance.
                 </div>
             </div>
-       
+        </div>
 
+        <!-- Tip 2 -->
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn px-5" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="tip-number">2.</span> Local Cuisine
+                    </button>
+                </h5>
+            </div>
 
-        </section> 
-       
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body px-5 mx-4">
+                    Explore the local cuisine and try traditional dishes for a more authentic travel experience.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tip 3 -->
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn px-5" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="tip-number">3.</span> Travel Safety
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body px-5 mx-4">
+                    Prioritize your safety while traveling by staying aware of your surroundings and keeping important documents secure.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tip 4 -->
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn px-5" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="tip-number">4.</span> Language Basics
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body px-5 mx-4">
+                    Learn a few basic phrases in the local language to enhance your travel experience and connect with locals.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tip 5 -->
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn px-5" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <span class="tip-number">5.</span> Currency Exchange
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body px-5 mx-4">
+                    Familiarize yourself with the local currency and exchange rates to avoid overpaying while shopping or dining.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tip 6 -->
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn px-5" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <span class="tip-number">6.</span> Adventure Planning
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body px-5 mx-4">
+                    Plan adventurous activities in advance and be sure to check the weather and safety regulations for your destination.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
       
 
 
@@ -415,18 +527,11 @@
                       </div>
                       <!-- Grid column -->
               
-                      <!-- Grid column -->
-                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                          Categories
-                        </h6>
-                        <p>Event Travel</p>
-                        <p>Holiday Trip</p>
-                        <p>Group Tour</p>
-                        <p>Package Holiday</p>
-                      </div>
-              
+                      <div class="container  world-map">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item " src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d65235289.18655915!2d-29.430770383666413!3d3.667803816495602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697883381812!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                       
               
                       <!-- Grid column -->
